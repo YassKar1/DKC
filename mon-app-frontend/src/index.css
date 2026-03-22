@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+/* Tailwind v4: @theme génère les utilitaires (bg-*, text-*, rounded-*, etc.) */
+@theme {
+  /* Couleurs sémantiques Eventglow */
+  --color-background: hsl(222 47% 3%);
+  --color-foreground: hsl(210 40% 98%);
+  --color-card: hsl(217 33% 8%);
+  --color-card-foreground: hsl(210 40% 98%);
+  --color-popover: hsl(217 33% 8%);
+  --color-popover-foreground: hsl(210 40% 98%);
+  --color-primary: hsl(239 84% 67%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(217 33% 14%);
+  --color-secondary-foreground: hsl(210 40% 98%);
+  --color-muted: hsl(217 19% 27%);
+  --color-muted-foreground: hsl(215 20% 65%);
+  --color-accent: hsl(239 84% 67%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(217 19% 15%);
+  --color-input: hsl(217 19% 15%);
+  --color-ring: hsl(239 84% 67%);
+  /* Radius (rounded-lg, rounded-md, rounded-sm) */
+  --radius-lg: 1rem;
+  --radius-md: calc(1rem - 2px);
+  --radius-sm: calc(1rem - 4px);
+}
+
+@layer base {
+  :root {
+    /* Gardés pour usage en CSS custom (opacité, etc.) */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+    --primary: 239 84% 67%;
+    --radius: 1rem;
+  }
+
+  * {
+    border-color: hsl(217 19% 15%);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  .glass-thin {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(16px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-hover {
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

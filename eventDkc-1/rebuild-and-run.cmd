@@ -1,0 +1,6 @@
+@echo off
+REM Supprime tout le cache de compilation (y compris l'ancienne classe Tarif)
+echo Nettoyage du dossier target...
+if exist target rmdir /s /q target
+echo Lancement du backend...
+call .\mvnw.cmd spring-boot:run

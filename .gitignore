@@ -1,0 +1,15 @@
+# Ne versionner que : eventDkc-1, mon-app-frontend, DkcMobile
+/*
+!eventDkc-1/
+!eventDkc-1/**
+!mon-app-frontend/
+!mon-app-frontend/**
+!DkcMobile/
+!DkcMobile/**
+!.gitignore
+
+# Fichiers sensibles (ne pas publier)
+.env
+**/.env
+**/.env.local
+**/.env.*.local
