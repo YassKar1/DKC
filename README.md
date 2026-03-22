@@ -8,9 +8,13 @@ L’application est accessible en ligne via un navigateur web.
 
 Selon les fonctionnalités, un compte peut être nécessaire : ( rôle :  admin, user ) 
 
-Identifiant : [à préciser si besoin]
+Role User :
+Identifiant : USER
+Mot de passe : 123456
 
-Mot de passe : [à préciser si besoin]
+Role Admin :
+Identifiant : ADMIN
+Mot de passe : ADMIN1
 
 Si aucun compte n’est requis, l’accès est libre.
 
