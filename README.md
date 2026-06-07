@@ -15,8 +15,11 @@ Identifiant : ADMIN
 Mot de passe : ADMIN1
 
 Pour consulter les événements sans compte : https://eventdkc.fr/events
+
 Pour se connecter : https://eventdkc.fr/login
+
 Pour le dashboard admin : https://eventdkc.fr/dashboard
 
 Remarques :
+
 En cas de problème d’accès, vérifiez la connexion internet ou contactez le développeur.
