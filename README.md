@@ -6,13 +6,19 @@ Le site web est accessible en ligne via un navigateur web.
 
 Selon les fonctionnalités, un compte peut être nécessaire (rôle : admin ou user).
 
-Rôle User
+Rôle User :
+
 Identifiant : USER
+
 Mot de passe : 123456
 
+
 Rôle Admin :
+
 Identifiant : ADMIN
+
 Mot de passe : ADMIN1
+
 
 Pour consulter les événements sans compte : https://eventdkc.fr/events
 
