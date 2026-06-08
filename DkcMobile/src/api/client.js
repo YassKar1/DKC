@@ -1,7 +1,7 @@
 import Constants from "expo-constants";
 
 const extra = Constants.expoConfig?.extra ?? {};
-const API_URL = extra.apiUrl ?? "http://172.20.10.11:8080";
+const API_URL = extra.apiUrl ?? "https://eventdkc.fr";
 
 export async function loginUser(email, motDePasse) {
   const response = await fetch(`${API_URL}/api/auth/login`, {

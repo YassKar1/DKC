@@ -38,7 +38,9 @@ public class SecurityConfig {
 				"http://localhost:8081",
 				"http://127.0.0.1:8081",
 				"http://192.168.1.19:8081",
-				"http://192.168.1.19:5173"
+				"http://192.168.1.19:5173",
+				"https://eventdkc.fr",
+				"https://www.eventdkc.fr"
 		));
 		config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 		config.setAllowedHeaders(List.of("*"));
