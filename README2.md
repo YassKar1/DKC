@@ -31,10 +31,6 @@ npx expo start -c
 
 4. Scanner le QR code affiché dans le terminal avec Expo Go (Android) ou l’appareil photo puis Expo Go (iPhone).
 
-Si le QR code ne fonctionne pas, relancer avec :
-
-npx expo start --tunnel -c
-
 L’application utilise l’API en production : https://eventdkc.fr
 
 Comptes de test
