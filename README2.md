@@ -1,31 +1,37 @@
-# Accès au site web DKC (Production)
+# Accès à l’application mobile DKC (Expo Go)
 
-Lien vers le site web en production : https://eventdkc.fr
+Prérequis
+Node.js installé sur le PC (https://nodejs.org)
+Expo Go installé sur le téléphone (App Store / Play Store)
+Connexion internet (PC et téléphone)
+Installation et lancement
+1. Cloner le dépôt GitHub :
 
-Le site web est accessible en ligne via un navigateur web.
+git clone <url-du-depot>
+cd DkcMobile
+2. Installer les dépendances :
 
-Selon les fonctionnalités, un compte peut être nécessaire (rôle : admin ou user).
+npm install
+3. Lancer l’application :
 
-Rôle User :
+npx expo start -c
+4. Scanner le QR code affiché dans le terminal avec Expo Go (Android) ou l’appareil photo puis Expo Go (iPhone).
 
-Identifiant : USER
+Si le QR code ne fonctionne pas, relancer avec :
+npx expo start --tunnel -c
 
-Mot de passe : 123456
+L’application utilise l’API en production : https://eventdkc.fr
 
+Comptes de test
+Un compte est nécessaire pour se connecter.
 
-Rôle Admin :
-
-Identifiant : ADMIN
-
-Mot de passe : ADMIN1
-
-
-Pour consulter les événements sans compte : https://eventdkc.fr/events
-
-Pour se connecter : https://eventdkc.fr/login
-
-Pour le dashboard admin : https://eventdkc.fr/dashboard
-
-Remarques :
-
-En cas de problème d’accès, vérifiez la connexion internet ou contactez le développeur.
+Rôle	Identifiant	Mot de passe
+User
+USER
+123456
+Admin
+ADMIN
+ADMIN1
+Remarques
+Le site web est également accessible sur https://eventdkc.fr
+En cas de problème, vérifier la connexion internet ou contacter le développeurlème d’accès, vérifiez la connexion internet ou contactez le développeur.
